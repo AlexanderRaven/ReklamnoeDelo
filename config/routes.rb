@@ -1,7 +1,21 @@
 Rails.application.routes.draw do
-  resources :microposts
+  resources :blog_articles
+
+  mount Ckeditor::Engine => '/ckeditor'
 
   resources :users
+  resources :sessions,   only: [:new, :create, :destroy]
+  resources :microposts, only: [:create, :destroy]
+  root  'static_pages#home'
+  match '/about',  to: 'static_pages#about',            via: 'get'
+  match '/blog',  to: 'static_pages#blog',         via: 'get'
+  match '/contact', to: 'static_pages#contact',     via: 'get'
+  match '/admin_main',    to: 'admin#admin_main',    via: 'get'
+   match '/admin_main/blog_changer',    to: 'admin#blog_changer',    via: 'get'
+  
+  match '/signin',  to: 'sessions#new',         via: 'get'
+  match '/signout', to: 'sessions#destroy',     via: 'delete'
+
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
