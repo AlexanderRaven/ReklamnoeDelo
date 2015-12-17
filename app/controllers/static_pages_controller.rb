@@ -10,7 +10,7 @@ class StaticPagesController < ApplicationController
   end
   
   def blog
-    @blog_articles = BlogArticle.paginate(page: params[:page], per_page: 20)
+    @blog_articles = BlogArticle.paginate(page: params[:page], per_page: 10)
   end
   
   def contact
