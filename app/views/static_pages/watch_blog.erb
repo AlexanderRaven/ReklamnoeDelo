@@ -1,0 +1,24 @@
+<% provide(:title, 'Просмотр статьи') %>
+<div class="container">
+  <div class="row">
+    <div class="box">
+      <div class="col-lg-12">
+        <div class="col-lg-12 text-center">
+          <hr>
+          <h2> <%= @blog_article.Title %>
+            <br>
+            <small><%= @blog_article.created_at.to_date.to_formatted_s(:rfc822) %></small>
+          </h2>
+          <hr>
+        </div>
+        <%= @blog_article.Body.html_safe %>
+        <br>
+        <center>
+          <%= button_to "Назад", blog_path, method: "get", class: "btn btn-default" %>
+        </center>
+
+      </div>
+    </div>
+  </div>
+
+</div>

@@ -11,8 +11,8 @@ Rails.application.routes.draw do
   match '/blog',  to: 'static_pages#blog',         via: 'get'
   match '/contact', to: 'static_pages#contact',     via: 'get'
   match '/admin_main',    to: 'admin#admin_main',    via: 'get'
-   match '/admin_main/blog_changer',    to: 'admin#blog_changer',    via: 'get'
-  
+  match '/watch_blog',  to: 'static_pages#watch_blog',         via: 'get'
+
   match '/signin',  to: 'sessions#new',         via: 'get'
   match '/signout', to: 'sessions#destroy',     via: 'delete'
 

@@ -17,8 +17,12 @@ class StaticPagesController < ApplicationController
   end
 
   def home
+
   end
 
+  def watch_blog
+    @blog_article = BlogArticle.find(params[:id])
+  end
 
 
 end

@@ -12,13 +12,15 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :Title %><br>
+    <h2>Заголовок:</h2><br>
     <%= f.text_field :Title %>
   </div>
   <div class="field">
-    <%= f.label :Body %><br>
+      <h2>Короткий вариант:</h2><br>
+      <%= f.cktext_area :short, rows: 50 %>
   </div>
   <div class="field">
+    <h2>Статья:</h2><br>
     <%= f.cktext_area :Body, rows: 50 %>
   </div>
   <div class="actions">

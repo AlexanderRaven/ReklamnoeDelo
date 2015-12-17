@@ -11,13 +11,15 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151216104702) do
+ActiveRecord::Schema.define(version: 20151217204637) do
 
   create_table "blog_articles", force: true do |t|
     t.string   "Title"
     t.text     "Body"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.text     "Short_Body"
+    t.text     "short"
   end
 
   create_table "ckeditor_assets", force: true do |t|

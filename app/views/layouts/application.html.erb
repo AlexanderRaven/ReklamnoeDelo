@@ -75,6 +75,11 @@
                     <li>
 						<%= link_to "Контакты", contact_path %>
                     </li>
+                  <% if signed_in? %>
+                      <li>
+                        <%= link_to "Управление", admin_main_path %>
+                      </li>
+                  <% end %>
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
