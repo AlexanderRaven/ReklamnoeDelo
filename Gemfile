@@ -22,6 +22,8 @@ gem 'bootstrap-will_paginate'
 
 gem 'ckeditor'
 gem 'paperclip', '< 4.0.0'
+gem 'russian', '~> 0.6.0'
+
 
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'

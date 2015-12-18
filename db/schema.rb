@@ -18,7 +18,6 @@ ActiveRecord::Schema.define(version: 20151217204637) do
     t.text     "Body"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.text     "Short_Body"
     t.text     "short"
   end
 
