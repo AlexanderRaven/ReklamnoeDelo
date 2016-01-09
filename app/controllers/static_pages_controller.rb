@@ -17,7 +17,7 @@ class StaticPagesController < ApplicationController
   end
 
   def home
-
+    @home_page_blocks = HomePageBlock.all
   end
 
   def watch_blog

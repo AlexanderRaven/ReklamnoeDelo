@@ -1,0 +1,25 @@
+<%= form_for(@home_page_block) do |f| %>
+  <% if @home_page_block.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@home_page_block.errors.count, "error") %> prohibited this home_page_block from being saved:</h2>
+
+      <ul>
+      <% @home_page_block.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <h2>Заголовок:</h2><br>
+    <%= f.text_field :header %>
+  </div>
+  <div class="field">
+    <h2>Содержание:</h2><br>
+    <%= f.cktext_area :body, rows: 50 %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

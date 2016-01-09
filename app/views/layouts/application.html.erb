@@ -41,7 +41,7 @@
 </head>
 
 <body>
- <div class="brand">Рекламное Дело <%= link_to image_tag("logo.png", alt: "Рекламное дело", :class => "logo_image") %></div>
+ <div class="brand">Рекламное Дело <%= image_tag("logo.png", alt: "Рекламное дело", :class => "logo_image") %></div>
     <div class="address-bar">г. Зарайск, ул. Мерецкова, д.23, ТЦ "Вертикаль", 4 этаж, офис 434.<br>8 (926) 05-03-111</div>
     
     
@@ -86,8 +86,9 @@
         </div>
         <!-- /.container -->
     </nav>
-
-<%= yield %>
+<div class="container">
+    <%= yield %>
+</div>
 
 <footer>
         <div class="container">

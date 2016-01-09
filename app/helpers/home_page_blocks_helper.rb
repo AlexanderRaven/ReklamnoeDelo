@@ -1,0 +1,2 @@
+module HomePageBlocksHelper
+end

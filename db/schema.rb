@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151217204637) do
+ActiveRecord::Schema.define(version: 20160109223024) do
 
   create_table "blog_articles", force: true do |t|
     t.string   "Title"
@@ -37,6 +37,13 @@ ActiveRecord::Schema.define(version: 20151217204637) do
 
   add_index "ckeditor_assets", ["assetable_type", "assetable_id"], name: "idx_ckeditor_assetable"
   add_index "ckeditor_assets", ["assetable_type", "type", "assetable_id"], name: "idx_ckeditor_assetable_type"
+
+  create_table "home_page_blocks", force: true do |t|
+    t.string   "header"
+    t.text     "body"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "microposts", force: true do |t|
     t.string   "content"

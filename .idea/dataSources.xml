@@ -7,6 +7,18 @@
       <jdbc-url>jdbc:sqlite:C:\Users\Raven\Documents\GitHub\ReklamnoeDelo\ReklamnoeDelo\db\development.sqlite3</jdbc-url>
       <libraries />
     </data-source>
+    <data-source source="LOCAL" name="Rails ReklamnoeDelo: test" uuid="73825d65-7857-40d4-a743-dfe08e144c50">
+      <driver-ref>sqlite.xerial</driver-ref>
+      <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
+      <jdbc-url>jdbc:sqlite:C:\Users\Raven\Documents\GitHub\ReklamnoeDelo\ReklamnoeDelo\db\test.sqlite3</jdbc-url>
+      <libraries />
+    </data-source>
+    <data-source source="LOCAL" name="Rails ReklamnoeDelo: production" uuid="4ef6a905-4f5e-41dc-a069-c09338b724a7">
+      <driver-ref>sqlite.xerial</driver-ref>
+      <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
+      <jdbc-url>jdbc:sqlite:C:\Users\Raven\Documents\GitHub\ReklamnoeDelo\ReklamnoeDelo\db\production.sqlite3</jdbc-url>
+      <libraries />
+    </data-source>
   </component>
 </project>
 

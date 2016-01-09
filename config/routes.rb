@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :home_page_blocks
+
   resources :blog_articles
 
   mount Ckeditor::Engine => '/ckeditor'
