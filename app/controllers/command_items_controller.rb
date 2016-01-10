@@ -28,7 +28,7 @@ class CommandItemsController < ApplicationController
 
     respond_to do |format|
       if @command_item.save
-        format.html { redirect_to @command_item, notice: 'Command item was successfully created.' }
+        format.html { redirect_to @command_item, notice: 'Блок успешно создан!' }
         format.json { render :show, status: :created, location: @command_item }
       else
         format.html { render :new }
@@ -42,7 +42,7 @@ class CommandItemsController < ApplicationController
   def update
     respond_to do |format|
       if @command_item.update(command_item_params)
-        format.html { redirect_to @command_item, notice: 'Command item was successfully updated.' }
+        format.html { redirect_to @command_item, notice: 'Блок успешно обновлен' }
         format.json { render :show, status: :ok, location: @command_item }
       else
         format.html { render :edit }
@@ -56,7 +56,7 @@ class CommandItemsController < ApplicationController
   def destroy
     @command_item.destroy
     respond_to do |format|
-      format.html { redirect_to command_items_url, notice: 'Command item was successfully destroyed.' }
+      format.html { redirect_to command_items_url, notice: 'Блок успешно удален' }
       format.json { head :no_content }
     end
   end

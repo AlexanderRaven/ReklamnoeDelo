@@ -43,7 +43,7 @@ class CarouselImagesController < ApplicationController
 
     respond_to do |format|
       if @carousel_image.save
-        format.html { redirect_to @carousel_image, notice: 'Carousel image was successfully created.' }
+        format.html { redirect_to @carousel_image, notice: 'Объект карусели успешно создан!' }
         format.json { render :show, status: :created, location: @carousel_image }
       else
         format.html { render :new }
@@ -60,7 +60,7 @@ class CarouselImagesController < ApplicationController
     end
     respond_to do |format|
       if @carousel_image.update(carousel_image_params)
-        format.html { redirect_to @carousel_image, notice: 'Carousel image was successfully updated.' }
+        format.html { redirect_to @carousel_image, notice: 'Объект карусели успешно обновлен!' }
         format.json { render :show, status: :ok, location: @carousel_image }
       else
         format.html { render :edit }
@@ -77,7 +77,7 @@ class CarouselImagesController < ApplicationController
     end
     @carousel_image.destroy
     respond_to do |format|
-      format.html { redirect_to carousel_images_url, notice: 'Carousel image was successfully destroyed.' }
+      format.html { redirect_to carousel_images_url, notice: 'Объект карусели успешно удален!' }
       format.json { head :no_content }
     end
   end

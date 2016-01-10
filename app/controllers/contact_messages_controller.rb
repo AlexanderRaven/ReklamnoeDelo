@@ -43,7 +43,7 @@ class ContactMessagesController < ApplicationController
   def update
     respond_to do |format|
       if @contact_message.update(contact_message_params)
-        format.html { redirect_to @contact_message, notice: 'Contact message was successfully updated.' }
+        format.html { redirect_to @contact_message, notice: 'Сообщение успешно обновлено!' }
         format.json { render :show, status: :ok, location: @contact_message }
       else
         format.html { redirect_to @contact_message }

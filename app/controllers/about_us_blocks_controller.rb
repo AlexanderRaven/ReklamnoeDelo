@@ -28,7 +28,7 @@ class AboutUsBlocksController < ApplicationController
 
     respond_to do |format|
       if @about_us_block.save
-        format.html { redirect_to @about_us_block, notice: 'About us block was successfully created.' }
+        format.html { redirect_to @about_us_block, notice: 'Блок страницы успешно создан!' }
         format.json { render :show, status: :created, location: @about_us_block }
       else
         format.html { render :new }
@@ -42,7 +42,7 @@ class AboutUsBlocksController < ApplicationController
   def update
     respond_to do |format|
       if @about_us_block.update(about_us_block_params)
-        format.html { redirect_to @about_us_block, notice: 'About us block was successfully updated.' }
+        format.html { redirect_to @about_us_block, notice: 'Блок страницы успешно обновлен!' }
         format.json { render :show, status: :ok, location: @about_us_block }
       else
         format.html { render :edit }
@@ -56,7 +56,7 @@ class AboutUsBlocksController < ApplicationController
   def destroy
     @about_us_block.destroy
     respond_to do |format|
-      format.html { redirect_to about_us_blocks_url, notice: 'About us block was successfully destroyed.' }
+      format.html { redirect_to about_us_blocks_url, notice: 'Блок страницы успешно удален!' }
       format.json { head :no_content }
     end
   end
