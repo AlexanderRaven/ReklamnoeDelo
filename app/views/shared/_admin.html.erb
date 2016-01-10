@@ -9,13 +9,15 @@
                     <center>
                         <%= button_to "Стартовая страница", home_page_blocks_path, method: "get", class: "btn btn-default admin_btn" %>
                         <br>
-                        <%= button_to "Карусель", signout_path, method: "delete", class: "btn btn-default admin_btn" %>
+                        <%= button_to "Карусель", carousel_images_path, method: "get", class: "btn btn-default admin_btn" %>
                         <br>
                         <%= button_to "Блог", blog_articles_path, method: "get", class: "btn btn-default admin_btn" %>
                         <br>
-                        <%= button_to "О нас", blog_articles_path, method: "get", class: "btn btn-default admin_btn" %>
+                        <%= button_to "О нас", about_us_blocks_path, method: "get", class: "btn btn-default admin_btn" %>
                         <br>
-                        <%= button_to "Просмотр данных с КФ", blog_articles_path, method: "get", class: "btn btn-default admin_btn" %>
+                        <%= button_to "Наша команда", command_items_path, method: "get", class: "btn btn-default admin_btn" %>
+                        <br>
+                        <%= button_to "Просмотр данных с КФ", contact_messages_path, method: "get", class: "btn btn-default admin_btn" %>
                         <br>
                         <%= button_to "Выход из системы", signout_path, method: "delete", class: "btn btn-default admin_btn" %>
                     </center>

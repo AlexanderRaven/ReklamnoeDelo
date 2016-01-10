@@ -1,4 +1,12 @@
 Rails.application.routes.draw do
+  resources :contact_messages
+
+  resources :command_items
+
+  resources :about_us_blocks
+
+  resources :carousel_images
+
   resources :home_page_blocks
 
   resources :blog_articles

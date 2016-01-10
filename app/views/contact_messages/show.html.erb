@@ -1,0 +1,45 @@
+<% provide(:title, 'Редактирование карусели') %>
+<div class="row">
+            <div class="box">
+                <div class="col-lg-12">
+					<p id="notice"><%= notice %></p>
+
+					<p>
+					  <strong>Сообщение от </strong>
+					  <%= @contact_message.name %>
+					</p>
+					<br>
+					<%= button_to "Назад", contact_messages_path, method: "get", class: "btn btn-default admin_btn" %>
+				</div>
+			</div>
+</div>
+<div class="row">
+            <div class="box">
+                <div class="col-lg-12">
+                    <hr>
+                    <h2 class="intro-text text-center">
+					             <%=  @contact_message.name %>
+                    </h2>
+                    <hr>
+                    <p>
+						  <strong>Имя:</strong>
+						  <%= @contact_message.name %>
+						</p>
+
+						<p>
+						  <strong>Email:</strong>
+						  <%= @contact_message.email %>
+						</p>
+
+						<p>
+						  <strong>Телефон:</strong>
+						  <%= @contact_message.telephone %>
+						</p>
+
+						<p>
+						  <strong>Сообщение:</strong>
+						  <%= @contact_message.message %>
+						</p>
+                </div>
+            </div>
+</div>

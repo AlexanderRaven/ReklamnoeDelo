@@ -1,0 +1,25 @@
+<%= form_for(@carousel_image) do |f| %>
+  <% if @carousel_image.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@carousel_image.errors.count, "error") %> prohibited this carousel_image from being saved:</h2>
+
+      <ul>
+      <% @carousel_image.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <h2>Название (не отображается):</h2><br>
+    <%= f.text_field :title %>
+  </div>
+    <div class="field">
+      <h2>Изображение:</h2><br>
+      <%= f.file_field :avatar %>
+    </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

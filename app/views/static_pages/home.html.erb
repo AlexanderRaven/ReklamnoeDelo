@@ -1,55 +1,63 @@
 <% provide(:title, 'Главная') %>
-        <div class="row">
-            <div class="box">
-                <div class="col-lg-12 text-center">
-                    <div id="carousel-example-generic" class="carousel slide">
-                        <!-- Indicators -->
-                        <ol class="carousel-indicators hidden-xs">
-                            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-                            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-                            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-                        </ol>
+<div class="row">
+  <div class="box">
+    <div class="col-lg-12 text-center">
+      <div id="carousel-example-generic" class="carousel slide">
+        <!-- Indicators -->
+        <ol class="carousel-indicators hidden-xs">
+          <% @carousel_images.each_with_index do |carousel_image, index| %>
+              <% if index === 0 %>
+                  <li data-target="#carousel-example-generic" data-slide-to="<%= index %>" class="active"></li>
+              <% else %>
+                  <li data-target="#carousel-example-generic" data-slide-to="<%= index %>"></li>
+              <% end %>
+          <% end %>
+        </ol>
 
-                        <!-- Wrapper for slides -->
-                        <div class="carousel-inner">
-                            <div class="item active">
-								<%= link_to image_tag("slide-1.jpg", alt: "", :class => "img-responsive img-full") %>
-                            </div>
-                            <div class="item">
-                                <%= link_to image_tag("slide-2.jpg", alt: "", :class => "img-responsive img-full") %>
-                            </div>
-                            <div class="item">
-                                <%= link_to image_tag("slide-3.jpg", alt: "", :class => "img-responsive img-full") %>
-                            </div>
-                        </div>
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+          <% @carousel_images.each_with_index do |carousel_image, index| %>
+              <% if index === 0 %>
+                  <div class="item active">
+              <% else %>
+                  <div class="item">
+              <% end %>
 
-                        <!-- Controls -->
-                        
-                    </div>
-                    <h2 class="brand-before">
-                        <small>Добро пожаловать на страницу сайта компании</small>
-                    </h2>
-                    <h1 class="brand-name">Рекламное Дело</h1>
-                    <hr class="tagline-divider">
-                    <h2>
-                        <small>By
-                            <strong>AR Team</strong>
-                        </small>
-                    </h2>
-                </div>
-            </div>
-        </div>
-        <% @home_page_blocks.each do |home_page_block| %>
-            <div class="row">
-              <div class="box">
-                <div class="col-lg-12">
-                  <hr>
-                  <h2 class="intro-text text-center">
-                    <%= home_page_block.header %>
-                  </h2>
-                  <hr>
-                    <%=home_page_block.body.html_safe %>
-                </div>
+              <%= image_tag carousel_image.avatar.url(:slide), alt: "", :class => "img-responsive img-full" %>
               </div>
-            </div>
-        <% end %>
+          <% end %>
+          </div>
+        </div>
+        <!-- Controls -->
+
+      </div>
+
+      <center>
+        <h2 class="brand-before">
+          <small>Добро пожаловать на страницу сайта компании</small>
+        </h2>
+        <h1 class="brand-name">Рекламное Дело</h1>
+        <hr class="tagline-divider">
+        <h2>
+          <small>By
+            <strong>AR Team</strong>
+          </small>
+        </h2>
+      </center>
+    </div>
+  </div>
+  <% @home_page_blocks.each do |home_page_block| %>
+      <div class="row">
+        <div class="box">
+          <div class="col-lg-12">
+            <hr>
+            <h2 class="intro-text text-center">
+              <%= home_page_block.header %>
+            </h2>
+            <hr>
+            <%= home_page_block.body.html_safe %>
+          </div>
+        </div>
+      </div>
+
+  <% end %>

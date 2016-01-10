@@ -1,0 +1,29 @@
+<%= form_for(@command_item) do |f| %>
+  <% if @command_item.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@command_item.errors.count, "error") %> prohibited this command_item from being saved:</h2>
+
+      <ul>
+      <% @command_item.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <h2>ФИО:</h2><br>
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <h2>Должность:</h2><br>
+    <%= f.text_field :position %>
+  </div>
+  <div class="field">
+      <h2>Изображение:</h2><br>
+      <%= f.file_field :avatar %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

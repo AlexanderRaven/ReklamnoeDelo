@@ -1,0 +1,34 @@
+<% provide(:title, 'Сообщения') %>
+<div class="container">
+<div class="row">
+            <div class="box">
+                <div class="col-lg-12">
+          <h1>Управление сообщениями</h1>
+
+            <br>
+
+          <table border="2">
+            
+            <tr>
+              <th ><center>Имя</center></th>
+              <th colspan="2"><center>Управление</center></th>
+            </tr>
+            
+
+           
+             <% @contact_messages.each do |contact_message| %>
+                <tr>
+                  <td class="table_element"><%= contact_message.name %></td>
+                  <td class="table_element"><%= button_to "Показать", contact_message, method: "get", class: "btn btn-default admin_btn" %></td>
+                  <td class="table_element"><%= button_to "Удалить", contact_message, method: :delete, class: "btn btn-default admin_btn", data: { confirm: 'Вы уверены, что хотите удалить запись?' } %></td>
+                </tr>
+            <% end %>
+           
+          </table>
+
+          <br>
+
+          </div>
+      </div>
+</div>
+</div>

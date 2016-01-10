@@ -1,12 +1,7 @@
 class StaticPagesController < ApplicationController
-  def home_old
-    if signed_in?
-      @micropost  = current_user.microposts.build
-      @feed_items = current_user.feed.paginate(page: params[:page])
-    end
-  end
-
   def about
+    @about_us_blocks = AboutUsBlock.all
+    @command_items = CommandItem.all
   end
   
   def blog
@@ -14,10 +9,12 @@ class StaticPagesController < ApplicationController
   end
   
   def contact
+    @contact_message = ContactMessage.new
   end
 
   def home
     @home_page_blocks = HomePageBlock.all
+    @carousel_images = CarouselImage.all
   end
 
   def watch_blog
