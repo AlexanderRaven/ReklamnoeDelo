@@ -2,16 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cbff60a4-7ccb-45e1-bae4-c19bcab8ef77" name="Default" comment="">
-      <change type="DELETED" beforePath="C:\Users\Raven\Documents\GitHub\ReklamnoeDelo\ReklamnoeDelo\public\system\carousel_images\avatars\000\000\010\original\STM32L152RBT6_test_board.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Raven\Documents\GitHub\ReklamnoeDelo\ReklamnoeDelo\public\system\carousel_images\avatars\000\000\010\slide\STM32L152RBT6_test_board.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Raven\Documents\GitHub\ReklamnoeDelo\ReklamnoeDelo\public\system\command_items\avatars\000\000\004\original\STM32L152RBT6_test_board.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Raven\Documents\GitHub\ReklamnoeDelo\ReklamnoeDelo\public\system\command_items\avatars\000\000\004\photo\STM32L152RBT6_test_board.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Raven\Documents\GitHub\ReklamnoeDelo\ReklamnoeDelo\public\system\command_items\avatars\000\000\005\original\смсмм.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Raven\Documents\GitHub\ReklamnoeDelo\ReklamnoeDelo\public\system\command_items\avatars\000\000\005\photo\смсмм.png" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/static_pages/about.html.erb" afterPath="$PROJECT_DIR$/app/views/static_pages/about.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/application.js" afterPath="$PROJECT_DIR$/app/assets/javascripts/application.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/contact_messages/index.html.erb" afterPath="$PROJECT_DIR$/app/views/contact_messages/index.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/static_pages_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/static_pages_controller.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
     </list>
     <ignored path="ReklamnoeDelo.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -27,7 +18,7 @@
     <SUITE FILE_PATH="coverage/ReklamnoeDelo@assets_precompile__ReklamnoeDelo.coverage" NAME="assets:precompile: ReklamnoeDelo Coverage Results" MODIFIED="1450379492267" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="ReklamnoeDelo" />
     <SUITE FILE_PATH="coverage/ReklamnoeDelo@Rails_console__ReklamnoeDelo.coverage" NAME="Rails console: ReklamnoeDelo Coverage Results" MODIFIED="1452416758778" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="ReklamnoeDelo" />
     <SUITE FILE_PATH="coverage/ReklamnoeDelo@Production__ReklamnoeDelo.coverage" NAME="Production: ReklamnoeDelo Coverage Results" MODIFIED="1452378414783" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="ReklamnoeDelo" />
-    <SUITE FILE_PATH="coverage/ReklamnoeDelo@Development__ReklamnoeDelo.coverage" NAME="Development: ReklamnoeDelo Coverage Results" MODIFIED="1452433318551" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="ReklamnoeDelo" />
+    <SUITE FILE_PATH="coverage/ReklamnoeDelo@Development__ReklamnoeDelo.coverage" NAME="Development: ReklamnoeDelo Coverage Results" MODIFIED="1452433994492" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="ReklamnoeDelo" />
     <SUITE FILE_PATH="coverage/ReklamnoeDelo@db_drop__ReklamnoeDelo.coverage" NAME="db:drop: ReklamnoeDelo Coverage Results" MODIFIED="1452388806909" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="ReklamnoeDelo" />
     <SUITE FILE_PATH="coverage/ReklamnoeDelo@db_reset__ReklamnoeDelo.coverage" NAME="db:reset: ReklamnoeDelo Coverage Results" MODIFIED="1452388816706" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="ReklamnoeDelo" />
   </component>
@@ -99,13 +90,22 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="application.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="application.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/assets/javascripts/application.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="0" selection-start="670" selection-end="670" vertical-scroll-proportion="0.67493796" vertical-offset="0" max-vertical-offset="403">
+            <state line="16" column="0" selection-start="670" selection-end="670" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="374">
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="application.html.erb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="8" column="40" selection-start="240" selection-end="240" vertical-scroll-proportion="0.36074272" vertical-offset="0" max-vertical-offset="1734">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -146,7 +146,6 @@
       <list>
         <option value="$PROJECT_DIR$/config/environments/development.rb" />
         <option value="$PROJECT_DIR$/config/environments/production.rb" />
-        <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
         <option value="$PROJECT_DIR$/config/routes.rb" />
         <option value="$PROJECT_DIR$/app/views/blog_articles/show.html.erb" />
         <option value="$PROJECT_DIR$/app/views/blog_articles/_form.html.erb" />
@@ -181,6 +180,7 @@
         <option value="$PROJECT_DIR$/app/controllers/static_pages_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/contact_messages/index.html.erb" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/application.js" />
+        <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
       </list>
     </option>
   </component>
@@ -279,7 +279,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="contact_messages" />
+              <option name="myItemId" value="layouts" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -594,7 +594,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1378" height="744" extended-state="1" />
+    <frame x="-8" y="-8" width="1378" height="744" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32880846" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -635,11 +635,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/views/microposts/_micropost.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="9" selection-start="160" selection-end="160" vertical-scroll-proportion="0.17085427" vertical-offset="0" max-vertical-offset="398" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/static_pages/watch_blog.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="17" column="17" selection-start="565" selection-end="565" vertical-scroll-proportion="0.72613066" vertical-offset="0" max-vertical-offset="493" />
@@ -973,10 +968,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/javascripts/application.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="0" selection-start="670" selection-end="670" vertical-scroll-proportion="0.67493796" vertical-offset="0" max-vertical-offset="403">
+        <state line="16" column="0" selection-start="670" selection-end="670" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="374">
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="40" selection-start="240" selection-end="240" vertical-scroll-proportion="0.36074272" vertical-offset="0" max-vertical-offset="1734">
+          <folding />
         </state>
       </provider>
     </entry>
